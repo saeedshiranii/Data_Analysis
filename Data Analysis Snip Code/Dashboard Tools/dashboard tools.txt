@@ -1,12 +1,46 @@
 Certainly! If you're looking for dashboard tools specifically in Python, here are some popular choices for creating interactive dashboards:
 
-1. **Dash by Plotly**: Dash is a web application framework for creating interactive, web-based dashboards using Python. It's built on top of Plotly and allows you to create data-driven applications with customized layouts and interactive components.
+1. **Dash by Plotly**:
+https://www.youtube.com/watch?v=gs4d0_AKQi8
+https://www.youtube.com/watch?v=hSPmj7mK6ng
+https://www.youtube.com/watch?v=J_Cy_QjG6NE&list=PLQVvvaa0QuDfsGImWNt1eUEveHOepkjqt
+https://www.youtube.com/watch?v=Ma8tS4p27JI&list=PLH6mU1kedUy8fCzkTTJlwsf2EnV_UvOV-
+https://www.youtube.com/watch?v=GGL6U0k8WYA
+https://www.youtube.com/watch?v=XOFrvzWFM7Y
+https://www.youtube.com/watch?v=iAXwlrtBUEY
+https://www.youtube.com/watch?v=uhxiXOTKzfs
+https://www.youtube.com/watch?v=7m0Bq1EGPPg
+https://www.youtube.com/watch?v=O2_wjDBisuM
 
-2. **Streamlit**: Streamlit is a Python library that makes it easy to create interactive web applications for data science and machine learning projects. It's particularly useful for quickly turning data scripts into shareable web apps.
 
-3. **Bokeh**: Bokeh is a versatile Python library that provides interactive visualizations and plots, which can be embedded into web applications or used to create dashboards with complex interactions.
+2. **Streamlit**:
 
-4. **Panel**: Panel is a Python library that extends the capabilities of Bokeh and other plotting libraries by providing components to create interactive dashboards with various widgets and layout options.
+
+
+https://www.youtube.com/watch?v=UN4DaSAZel4&list=PLuU3eVwK0I9PT48ZBYAHdKPFazhXg76h5
+https://www.youtube.com/watch?v=ZZ4B0QUHuNc&list=PLtqF5YXg7GLmCvTswG32NqQypOuYkPRUE
+https://www.youtube.com/watch?v=43RJ3JByygE&list=PL2VXyKi-KpYtZzm1K8UKnnBzsOCtekhKq
+https://www.youtube.com/watch?v=RjiqbTLW9_E&list=PLa6CNrvKM5QU7AjAS90zCMIwi9RTFNIIW
+https://www.youtube.com/watch?v=7yAw1nPareM
+
+
+
+
+
+3. **Bokeh**: 
+
+https://www.youtube.com/watch?v=VFpfZz6w9Oo&list=PL8eNk_zTBST-AwsJnOSxJGDf7jCMVIvXT
+https://www.youtube.com/watch?v=URl3a-BcbIE
+https://www.youtube.com/watch?v=HDvxYoRadcA
+
+
+4. **Panel**:
+
+https://www.youtube.com/watch?v=t8P6estGusQ
+https://www.youtube.com/watch?v=VtchVpoSdoQ
+https://www.youtube.com/watch?v=fPhBbZjroBI
+https://www.youtube.com/watch?v=uhxiXOTKzfs
+
 
 5. **Voilà**: Voilà is a tool that helps you turn Jupyter notebooks into interactive web applications, including dashboards. It allows you to create dynamic dashboards directly from your Jupyter notebooks.
 
