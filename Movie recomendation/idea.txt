@@ -1,0 +1,9 @@
+a chart which show all countries and related genres hue = status
+
+i want a bar plot gener x has these countries hue = status
+
+
+
+find which countries has more fantasy movies, what is situation of drama and action movies in those countries?
+
+
