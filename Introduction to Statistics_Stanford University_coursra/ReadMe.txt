@@ -1,0 +1,2 @@
+This is a directory to store files and materials of this course:
+https://www.coursera.org/learn/stanford-statistics?irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=4863057&utm_content=b2c#syllabus
