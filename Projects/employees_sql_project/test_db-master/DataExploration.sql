@@ -377,3 +377,125 @@ FROM
     dept_manager dm
         LEFT JOIN
     employees e ON e.emp_no = dm.emp_no;
+    
+    
+    
+/*Join the 'employees' and the 'dept_manager' tables to return a subset of all the employees whose last name is Markovitch.
+ See if the output contains a manager with that name.
+
+Hint:
+ Create an output containing information corresponding to the following fields:
+ emp_no, first_name, last_name, dept_no, from_date.Order by 'dept_no' descending, and then by 'emp_no'.
+ 
+ */
+ 
+ 
+ SELECT 
+    e.emp_no,
+    dm.dept_no,
+    e.birth_date,
+    e.first_name,
+    e.last_name,
+    e.gender,
+    e.hire_date
+FROM
+    dept_manager dm
+        LEFT JOIN
+    employees e ON e.emp_no = dm.emp_no
+WHERE
+    e.last_name = 'Markovitch';
+    
+    
+/*Extract a list containing information about all managers 
+employee number, first and last name, department number, and hire date. Use the old type of join syntax to obtain the result.  
+  */
+  
+  SELECT 
+    *
+FROM
+    employees e,
+    dept_manager dm
+WHERE
+    e.emp_no = dm.emp_no;
+    
+SELECT 
+    *
+FROM
+    dept_manager dm
+        JOIN
+    employees e ON e.emp_no = dm.emp_no;
+    
+
+
+set @@global.sql_mode := replace(@@global.sql_mode, 'ONLY_FULL_GROUP_BY', '');
+
+# Select the first and last name, the hire date, and the job title of all employees whose first name is Margareta and have the last name Markovitch.
+SELECT 
+    *
+FROM
+    titles
+LIMIT 10;
+
+SELECT 
+    e.first_name, e.last_name, e.hire_date, t.title
+FROM
+    employees e
+        JOIN
+    titles t ON t.emp_no = e.emp_no
+WHERE
+    first_name = 'Margareta'
+        AND last_name = 'Markovitch';
+
+
+#  Use a CROSS JOIN to return a list with all possible combinations between managers from the dept_manager table and department number 9.
+
+SELECT
+dm.*, d.*
+FROM
+departments d
+CROSS JOIN
+dept_manager dm
+WHERE
+d.dept_no = 'd009'
+ORDER BY d.dept_name;
+
+
+# Return a list with the first 10 employees with all the departments they can be assigned to.
+# hint dont use limit, use Where
+
+SELECT 
+    e.*, dm.*
+FROM
+    employees e
+        CROSS JOIN
+    departments dm
+    where e.emp_no < '10011';
+
+# Select all managers first and last name, hire date, job title, start date, and department name.
+select * from employees;
+select * from desalariespt_manager;
+
+
+SELECT 
+    e.first_name,
+    e.last_name,
+    e.hire_date AS 'Hire date',
+    t.title AS 'Job Title',
+    salaries.salary,
+    dm.from_date AS 'Start Date',
+    d.dept_name AS 'Department name'
+FROM
+    dept_manager dm
+        LEFT JOIN
+    employees e ON e.emp_no = dm.emp_no
+        JOIN
+    departments d ON d.dept_no = dm.dept_no
+        JOIN
+    titles t ON e.emp_no = t.emp_no
+        JOIN
+    salaries ON salaries.emp_no = e.emp_no
+ORDER BY salary DESC;
+
+
+
+# How many male and how many female managers do we have in the employees database?
